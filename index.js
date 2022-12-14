@@ -24,7 +24,7 @@ app.post("/create", createValues);
 app.get("/request", getValues);
 
 async function createValues(req, res) {
-  const { temperature, altitude, dewpoint, pressure, rain, humidity } =
+  const { temperature, altitude, dewpoint, pressure, rain, humidity,precipetation } =
     req.body;
   console.log(req.body);
   const time = Date.now();
